@@ -4,7 +4,7 @@
   /* border: 2px solid red; */
 }
 body {
-    background-color: rgba(255, 228, 232, 0.708);
+  background-color: rgba(255, 228, 232, 0.708);
   /* width: 100%; */
   color: #283618;
   font-family: "Playfair Display", serif;
@@ -14,13 +14,18 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 20px;
+  /* gap: 20px; */
   padding: 15px 0px;
   width: 90%;
 }
 header img {
-  width: 40px;
- 
+  width: 30px;
+}
+.love {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 .container {
   width: 100%;
@@ -81,20 +86,51 @@ header img {
   color: #ffffff;
   padding: 0 24px;
   max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+.downimg {
+  width: 25px;
+  height: 15px;
+  /* background-color: #ff673d; */
+  background-image: url('icons8-arrow-down-20.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 20px;
+  animation: slowBounce 3s ease-in-out infinite;
+}
+
+@keyframes slowBounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+/* .downimg img {
+  width: 10px;
+  background-color: #283618;
+  height: 100px;
+} */
 
 .herowords h2 {
   font-family: "Playfair Display", serif;
   font-size: clamp(2.5rem, 5vw, 3.5rem);
   letter-spacing: 0.5px;
-  margin-bottom: 12px;
+  margin-bottom: 9px;
 }
 
 .herowords h4 {
   font-weight: 400;
   font-size: 1.1rem;
-  color: #e07a5f;
-  margin-bottom: 32px;
+  color: #ff673d;
+  margin-bottom: 20px;
 }
 
 .herowords p {
@@ -136,11 +172,11 @@ header img {
 }
 .gallerywrite {
   width: 85%;
-  font-size: 1rem;
+  font-size: 0.9rem;
   text-align: center;
   letter-spacing: 1px;
-  padding: 10px 10px;
-  font-style: italic;
+  padding: 20px 10px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .familygallery {
   display: flex;
@@ -150,7 +186,7 @@ header img {
   width: 95%;
   /* padding: 5px 5px; */
   overflow-x: auto;
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
   margin-bottom: 50px;
   border: 2px solid #faf3ec;
   opacity: 0; /* start invisible */
@@ -172,41 +208,40 @@ header img {
   object-fit: cover;
   border-radius: 12px;
 }
-.note{
-    width: 80%;
-    padding: 10px;
-    /* margin-top: 30px; */
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   background-color: rgba(255, 206, 214, 0.833);
-   border-radius: 20px;
-   
+.note {
+  width: 80%;
+  padding: 10px;
+  /* margin-top: 30px; */
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 206, 214, 0.833);
+  border-radius: 20px;
 }
-.actualnote{
-    width: 90%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    line-height: 22px;
-    font-style: italic;
-    font-size: 1.1rem;
+.actualnote {
+  width: 90%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  line-height: 26px;
+  font-style: italic;
+  font-size: 1.1rem;
 }
-.actualnote h2{
-    color: #e07a5f;
+.actualnote h2 {
+  color: #ff673d;
 }
-.footimg{
-    margin-top: 30px;
+.footimg {
+  margin-top: 30px;
 }
 .footimg img {
   width: 200px;
 }
 .footimg {
-    height: 60vh;
+  height: 60vh;
   position: relative;
   width: 100%;
   overflow: hidden;
@@ -215,7 +250,6 @@ header img {
   justify-content: center;
   text-align: center;
 }
-
 
 .footimg img {
   position: absolute;
@@ -245,8 +279,6 @@ header img {
   text-align: center;
 }
 
-
-
 .footwrite h2 {
   font-weight: 400;
   font-size: 1.5rem;
@@ -261,18 +293,18 @@ header img {
   opacity: 1.5;
 }
 
-footer{
-    padding: 60px 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-    letter-spacing: 3.5px;
-    /* width: 300px; */
+footer {
+  padding: 60px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  letter-spacing: 3.5px;
+  /* width: 300px; */
 }
-footer img{
-    width: 30px;
+footer img {
+  width: 30px;
 }
 @media (max-width: 760px) {
   .animationimg {
